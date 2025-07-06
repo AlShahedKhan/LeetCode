@@ -43,7 +43,6 @@ class Solution {
             echo "📌 list1 finished, attaching remaining list2 starting from {$list2->val}\n";
             $current->next = $list2;
         }
-
         echo "✅ Merge Complete.\n";
         return $dummy->next;
     }
