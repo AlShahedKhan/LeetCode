@@ -34,4 +34,3 @@ for ($i = 0; $i < $length; $i++) {
     echo $nums[$i] . " ";
 }
 echo "\n";
-// 
