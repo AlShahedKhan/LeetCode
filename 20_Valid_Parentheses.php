@@ -8,7 +8,7 @@ class Solution {
             '}' => '{',
             ']' => '['
         ];
-
+// 
         for ($i = 0; $i < strlen($s); $i++) {
             $char = $s[$i];
             if (in_array($char, ['(', '{', '['])) {
