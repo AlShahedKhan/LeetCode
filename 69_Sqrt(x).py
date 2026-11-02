@@ -23,4 +23,4 @@ class Solution(object):
         print(int(better_guess))
 
 solution = Solution()
-solution.mySqrt(7)
+solution.mySqrt(12)
