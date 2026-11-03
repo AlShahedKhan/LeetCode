@@ -14,6 +14,8 @@ class Solution(object):
 
         while True:
             better_guess = 0.5 * (guess + (x / guess))
+            # Newton-Rephson method (borgomul er kasa kasi ber korar sutro)
+            # new guess = 1/2(old guess + x/ old guess)
 
             if abs(better_guess - guess) < 0.000001:
                 break
