@@ -9,6 +9,7 @@ When helping this user learn Python in this project:
 - After those explanatory comments, write the Python code that translates the described strategy into instructions.
 - Put detailed explanatory comments immediately before every executable code line, including imports, class and function definitions, assignments, loops, conditions, and returns. Explain both what the line does and why it is needed, first in simple English followed by its Bengali translation. Do this by default; do not combine several lines into a single unexplained group.
 - Place relevant worked-example values alongside the line they explain, so the user can connect the reasoning and changing values directly to the code instead of reading only a separate trace.
+- For each executable line, show its result for the chosen example in a comment immediately after the line. Distinguish printed output from variable values, returned values, and condition results; do not label an assignment as printed output. For loops, show the relevant results on each iteration, and for imports or definitions explain that they produce no printed output by themselves.
 - Use concrete values, a small table, or sample output when these make the explanation easier to follow.
 - Avoid unexplained Python shorthand; show its expanded form when it helps the beginner.
 - Do not assume the user knows operators, built-in functions, indexing, loop behavior, or type hints. Explain each newly introduced item (such as %, //, +=, chr, ord, slicing, or enumerate) in simple English and Bengali, with a tiny concrete example.
