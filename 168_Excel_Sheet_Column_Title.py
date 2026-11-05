@@ -9,11 +9,24 @@ import string
     #Because leetCode need this class  
 class Solution:
         # Define function so it takes integer and return string
+        # Int and str describe the types; self refers to the object.
     def convertToTitle(self, columnNumber: int) ->str:
-        # We need all uppercase alphabet
+        # Result: When called columnNumber
         letters = string.ascii_uppercase
         # We need to make them in to list to find index
         letters = list(letters)
+        title = ""
+        while columnNumber > 0:
+            columnNumber = columnNumber -1
+            index = columnNumber % 26 # 10 pelam
+            letter = letters[index] # 10 number index K so K pelam
+            title = letter + title # Title er vitore k raklam
+            columnNumber = columnNumber//26
+        return title
+            
+            
+        
+    
         
               
 solution = Solution()
