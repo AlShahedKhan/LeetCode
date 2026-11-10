@@ -4,33 +4,28 @@
 #Clue: We must convert a number into positions using 26 letters
 #key Trick: Subtract 1 because Excel counts from 1, but indexes start at 0
 
-#Because we need all alphabet
-import string
-    #Because leetCode need this class  
-class Solution:
-        # Define function so it takes integer and return string
-        # Int and str describe the types; self refers to the object.
-    def convertToTitle(self, columnNumber: int) ->str:
-        # Result: When called columnNumber
-        letters = string.ascii_uppercase
-        # We need to make them in to list to find index
-        letters = list(letters)
-        title = ""
-        while columnNumber > 0:
-            columnNumber = columnNumber -1
-            index = columnNumber % 26 # 10 pelam
-            letter = letters[index] # 10 number index K so K pelam
-            title = letter + title # Title er vitore k raklam
-            columnNumber = columnNumber//26
-        return title
-            
-            
-        
-    
-        
+# #Because we need all alphabet
+# import string
+#     #Because leetCode need this class  
+# class Solution:
+#         # Define function so it takes integer and return string
+#         # Int and str describe the types; self refers to the object.
+#     def convertToTitle(self, columnNumber: int) ->str:
+#         # Result: When called columnNumber
+#         letters = string.ascii_uppercase
+#         # We need to make them in to list to find index
+#         letters = list(letters)
+#         title = ""
+#         while columnNumber > 0:
+#             columnNumber = columnNumber -1
+#             index = columnNumber % 26 # 10 pelam
+#             letter = letters[index] # 10 number index K so K pelam
+#             title = letter + title # Title er vitore k raklam
+#             columnNumber = columnNumber//26
+#         return title    
               
-solution = Solution()
-print(solution.convertToTitle(271))
+# solution = Solution()
+# print(solution.convertToTitle(271))
 
 
 
@@ -137,3 +132,22 @@ print(solution.convertToTitle(271))
 # print(solution.convertToTitle(271))
 # # Printed output: JK
 # # স্ক্রিনে দেখাবে: JK
+
+
+
+
+import string
+class Solution:
+    def FindExcelColumn(self, coulmnNumber):
+        letters = string.ascii_uppercase
+        letters = list(letters)
+        title = ""
+        while coulmnNumber > 0:
+            coulmnNumber = coulmnNumber - 1
+            rigthLetterIndex = coulmnNumber%26
+            letter = letters[rigthLetterIndex]
+            title = letter + title
+            coulmnNumber = coulmnNumber//26
+        return title
+soluiion = Solution()
+print(soluiion.FindExcelColumn(271))
